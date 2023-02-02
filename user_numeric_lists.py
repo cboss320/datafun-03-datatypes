@@ -62,3 +62,85 @@ if __name__ == "__main__":
 # and use them there.  This is a very common practice.
 # Anything you write can be imported into later projects.
 
+###
+
+import statistics
+import math
+
+# How long to cook pasta 
+print('Courtney Pigford 1/21/23:')
+
+print('How long cooking pasta')
+
+scores = [
+    8,
+    9,
+    10,
+    11,
+    12,
+    3,
+    4,
+    5,
+    13,
+    14,
+    15,
+    12, 
+    12, 
+    12, 
+    12, 
+
+]
+
+X = statistics.mean(scores)
+y = statistics.mode(scores)
+z = statistics.median(scores)
+a = (statistics.stdev(scores))
+b = (statistics.variance(scores))
+
+print('the average cooking time is: ', X)
+print('the most common time to cook pasta is: ', y)
+print('the best cooking time for all pasta is: ', z)
+print('the variance of cooking times is:  ', b)
+print('Standard Deviation of the cooking times is: ', a)
+
+
+xtimes_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+yvalues_list = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 35]
+
+correlationxy = statistics.correlation(xtimes_list, yvalues_list)
+
+print('Correlationxy is: ', correlationxy)
+
+slope, intercept = statistics.linear_regression(xtimes_list, yvalues_list)
+print('Slope: ',slope)
+print('Interncept: ', intercept)
+
+x_max = max(xtimes_list)
+newx = x_max * 1.5  
+
+print('newx: ', newx)
+
+# Use the slope and intercept to predict a y value for the future x value
+# y = mx + b
+
+newy = slope * newx + intercept
+print('newy: ', newy)
+
+max = max(scores)
+min = min(scores)
+len = len(scores)
+sum = sum(scores)
+
+avg = sum / len
+
+asc_scores = sorted(scores)
+
+desc_scores = sorted(scores, reverse=True)
+
+print('max: ',max)
+print('min: ', min)
+print('len: ',len) 
+print('sum: ',sum) 
+print('Average: ',avg)
+print('asc scores: ', asc_scores)
+print('desc scores: ', desc_scores)

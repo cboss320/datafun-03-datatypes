@@ -14,3 +14,7 @@ Clone your new repo down to your machine.
 ## Task 3 - Open the Project Locally
 
 Open the project in VS Code. 
+
+## Task 4 - Update README.md 
+
+Courtney Pigford, 1-28-2023, Domain: pasta 
