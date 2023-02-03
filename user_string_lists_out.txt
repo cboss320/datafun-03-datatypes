@@ -24,4 +24,3 @@ print('these are the popular pastas: ', zip(text_listB, text_listC))
 import random
 random.choice(text_listD)
 print('this is an unpopular pasta: ', random.choice(text_listD))
-
